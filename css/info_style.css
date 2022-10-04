@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*header*/
+body {
+    font-family: "pretendard";
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+
+.header {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    top: 22px;
+    left: 65px;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    left: 235px;
+}
+
+.menu li {
+    float: left;
+    padding-right: 45px;
+}
+
+.menu li a {
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+    color: #fff;
+}
+
+.menu li span {
+    color: #F4DF02;
+}
+
+.link {
+    position: absolute;
+    right: 45px;
+    top: 23.5px
+}
+
+.link li {
+    float: left;
+}
+
+.link li:nth-child(1) {
+    padding: 7px 50px;
+}
+
+/*배경*/
+.info_bg {
+    background: #EFEAE7;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*소제목*/
+h3 {
+    text-align: center;
+    padding: 145px 0 100px 0;
+}
+
+/*map*/
+.map {
+    width: 1650px;
+    height: 1885px;
+    margin: 0 auto;
+}
+
+.map img {
+    padding-bottom: 50px;
+}
+
+iframe {
+    width: 1650px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+/*FaQ*/
+/*section1*/
+
+
+#section1 {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*faq*/
+.font_10 {
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 11px;
+}
+
+.right {
+    position: relative;
+    width: 1060px;
+    padding: 10px 0;
+    float: right;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+}
+
+.right ul li:nth-child(1) {
+    text-align: center;
+    width: 140px;
+    float: left;
+}
+
+.right ul li:nth-child(2) {
+    width: 1070px;
+    float: left;
+}
+
+.right ul li:nth-child(3) {
+    width: 110px;
+    float: right;
+    padding-top: 17.5px
+}
+
+.right>li ul {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.text_info {
+    background: #ffffff;
+    text-align: left;
+    overflow: hidden;
+    width: 1060px;
+}
+
+.right>li .text_info {
+    display: none;
+    padding: 25px 0 30px 0;
+}
+
+.right>li .text_info {
+    width: 100%
+}
+
+.notice_line {
+    margin-bottom: 25px;
+}
+
+.notice_bg {
+    height: 781px
+}
+
+.right .font_18 {
+    position: relative;
+    height: 50px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right .font_18 .noc_po {
+    position: absolute;
+    left: 20%;
+    bottom: 110%;
+    transform: translateY(-50%);
+}
+
+.turn {
+    transform: rotate(180deg);
+}
+
+.plus{
+    padding-left: 70px;
+}
+.plus img {
+    transition: transform 0.5s;
+}
+
+.text_info p {
+    float: left;
+    font-size: 18px;
+    padding-left: 50px;
+    line-height: 40px;
+}
+.font0{
+    background: #fff;
+}
+/*SUBMIT*/
+.submit{
+    width: 1060px;
+    margin: 145px auto;
+}
+h4{
+    text-align: left;
+    font-size: 33px;
+    font-weight: 900;
+    padding-bottom: 60px;
+}
+th{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 23px 0 10px 0;
+}
+input{
+    border: 1px solid #ccc;
+    padding: 19px;  
+    display: inline-block;
+    font-size: 20px;
+}
+.name{
+    padding-left: 38px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    outline-style: none;
+    resize: vertical;
+    font-size: 20px;
+    font-weight: 600;
+}
+input[type="button"]{
+    background-color: #5D5D5D;
+    color: #fff;
+    padding: 2px 17px;
+    font-size: 15px;  
+    font-weight: 800;
+}
+.file{
+    color: #B2AFB2;
+    padding-left: 7px;
+}
+td img{
+    padding-top: 50px;
+}
+/*footer*/
+.footer{
+    height: 550px;
+    color: #B9B9B9;
+    background-color: #333;
+    font-family: "pretendard";
+}
+.footer_img{
+    background: url(../images/MAIN/FOOTER/FOOTER.png) no-repeat center top;
+    width: 100%;
+    height: 375px;
+}
+.footer_text{
+    width: 100%;
+    height: 175px;
+    position: relative;
+}
+.left{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.left p{
+    float: left;
+}
+.left_logo li{
+    float: left;
+    padding: 0 10px 10px 0;
+}
+.left_logo li img{
+    width: 100%;
+}
+.center{
+    text-align: center;
+    padding-top: 30px;
+}
+.sns{
+    padding-top: 15px;
+}
+.right2{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.right2 .big{
+    padding-bottom: 20px;
+}
+.right2 .small{
+    font-size: 12px;
+    text-align: right;
+}
+
+
+
+

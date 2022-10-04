@@ -1,0 +1,1338 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #000; text-decoration: none;}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+body{
+    font-family: "pretendard";
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+/*header*/
+/*header_pc_1100*/
+@media (min-width:1100px){
+    .header{
+        background-color: #fff;
+        height: 100px;
+        width: 100%;
+        position: relative;
+        font-family: "pretendard";
+    }
+    .header h1{
+        position: absolute;
+        top: 22px;
+        left: 65px;
+    }
+    .menu{
+        position: absolute;
+        top: 35px;
+        left: 235px;
+    }
+    .menu li{
+        float: left;
+        padding-right: 45px;
+    }
+    .menu li a{
+        font-size: 25px;
+        font-weight: 900;
+        display: block;
+    }
+    .link{
+        position: absolute;
+        right: 45px;
+        top: 23.5px
+    }
+    .link li{
+        float: left;
+    }
+    .link li:nth-child(1){
+        padding: 7px 50px ;
+    }
+    .m_logo{
+        display: none;
+    }
+    .m_link{
+        display: none;
+    }
+    .m_menu_wrap{
+      display: none;
+    }
+}
+/*header_pc_391_999*/
+@media (min-width:391px) and (max-width:1099px){
+    .header{
+        width: 100%;
+        position: relative;
+        height: 63px;
+        font-family: "pretendard";
+    }
+    .m_logo{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+    }
+    .m_link{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .header .logo{
+        display: none;
+    }
+    .header .link{
+        display: none;
+    }
+    .header .menu{
+        display: none;
+    }
+    .m_menu_wrap{
+      position: relative;
+    }
+    .menu_btn{
+      text-align: right;
+      position: fixed;
+      top: 650px;
+      right: 30px;
+      z-index: 998;
+    }
+    .menu_bg{
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      top:0;
+      display: none;
+    }
+    .sidebar_menu{
+      display: none;
+      width: 100%;
+      height: 864px;
+      background: #000;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      position: relative;
+    }
+    .close_btn{
+      width: 25px;
+      height: 25px;
+      position: fixed;
+      top: 650px;
+      right: 50px;
+      z-index: 999;
+    }
+    .close_btn > a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .menu_wrap{
+      list-style: none;
+      padding-top: 15px;
+       
+    }
+    .menu_logo{
+      padding: 12px 20px;
+    }
+    .menu_wrap li{
+      padding: 0 0 30px 27px;
+      font-weight: 900;
+    }
+    .menu_wrap li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    .menu_wrap li a:hover{
+      color: #F4DF02;
+    }
+}
+/*header_mobile_390*/
+@media (max-width:390px){
+    .header{
+        width: 100%;
+        position: relative;
+        height: 63px;
+    }
+    .m_logo{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+    }
+    .m_link{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .header .logo{
+        display: none;
+    }
+    .header .link{
+        display: none;
+    }
+    .header .menu{
+        display: none;
+    }
+    .m_menu_wrap{
+      position: relative;
+    }
+    .menu_btn{
+      text-align: right;
+      position: fixed;
+      top: 650px;
+      right: 30px;
+      z-index: 998;
+    }
+    .menu_bg{
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      top:0;
+      display: none;
+    }
+    .sidebar_menu{
+      display: none;
+      width: 390px;
+      height: 800px;
+      background: #000;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      position: relative;
+    }
+    .close_btn{
+      width: 25px;
+      height: 25px;
+      position: fixed;
+      top: 650px;
+      left: 315px;
+      z-index: 999;
+    }
+    .close_btn > a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .menu_wrap{
+      list-style: none;
+      padding-top: 15px;
+       
+    }
+    .menu_logo{
+      padding: 12px 20px;
+    }
+    .menu_wrap li{
+      padding: 0 0 30px 27px;
+      font-weight: 900;
+    }
+    .menu_wrap li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    .menu_wrap li a:hover{
+      color: #F4DF02;
+    }
+}
+/*banner*/
+/*banner_pc_1000*/
+@media (min-width:1000px){
+    .banner{
+        background: url(../images/MAIN/BANNER/BANNER.png) no-repeat center top;
+        height: 800px;
+        width: 100%;
+    }
+}
+/*banner_391~1099*/
+@media (min-width:391px) and (max-width:1099px){
+  .banner{
+    background: url(../images/MAIN/BANNER/BANNER.png) no-repeat center top;
+        height: 800px;
+        width: 100%;
+}
+}
+/*banner_mobile_390*/
+@media (max-width:390px){
+    .banner{
+        background: url(../images_mobile/MAIN/BANNER/S_BANNER.png) no-repeat center top;
+        height: 781px;
+        width: 100%;
+    }
+}
+/*festivals*/
+/*festivals 공통*/
+.festivals{
+    background-color: #EFEAE7;
+    overflow: hidden;
+    font-family: "pretendard";
+}
+/*festivals_pc_1000*/
+@media (min-width:1000px){
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        padding: 70px 0 50px 20px;
+    }
+    .place{
+        display: flex;
+        justify-content: space-around;
+    }
+    .place li{
+        width: 33.3%;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .place li img{
+        width: 98%;
+    }
+    .m_place{
+        display: none;
+    }
+}
+/*festivals_391~1099*/
+@media (min-width:391px) and (max-width:1099px){
+  h2{
+    font-size: 27px;
+    font-weight: 800;
+    text-align: center;
+    padding: 40px 0;
+}
+.place{
+    display: flex;
+    justify-content: space-around;
+}
+.place li{
+    width: 33.3%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.place li img{
+    width: 98%;
+}
+.m_place{
+    display: none;
+}
+}
+/*festivals_mobile_390*/
+@media (max-width:390px){
+    h2{
+        font-size: 27px;
+        font-weight: 800;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .place{
+        display: none;
+    }
+}
+/*soundcom*/
+.soundcom{
+    background-color: #EFEAE7;
+    overflow: hidden;
+    text-align: center;
+}
+.soundcom img{
+    padding-bottom: 100px;
+    width: 100%;
+}
+/*soundcom_mobile_390*/
+@media (max-width:390px){
+    .soundcom img{
+        padding-bottom: 0;
+    }
+}
+/*shop*/
+/*shop_pc_1000*/
+@media (min-width:1000px){
+    .shop{
+        height: 880px;
+        background-color: #FF4646;
+        color: #fff;
+        width: 100%;
+        font-family: "pretendard";
+    }
+    .shop2{
+        display: none;
+    }
+    .shop p{
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .shop .price{
+        padding-top: 8px;
+    }
+    .burton{
+        padding-top: 70px;
+        text-align: center;
+    }
+    .m_burton{
+        display: none;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .slider {
+          width: 100%;
+          margin: 0px auto;
+      }
+      
+     
+      .slick-slide {
+        margin-left: 10px;
+      }
+      
+      .gallery{
+        width: 443px;
+        height:443px;
+        margin:0 1%;
+        text-align:center;
+        border-radius:30px;
+        cursor: pointer;
+      }
+      
+      .gallery img{
+        width: 100%;
+        height: 443px;
+        display:inline-block;
+      }
+      .gallery p{
+        text-align: left;
+        font-family: "pretendard";
+      }
+      /*T_SHIRTS*/
+      .gallery_bg{
+        background-image: url(../images/MAIN/SHOP/T-shirts_basic_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_2{
+        background-image: url(../images/MAIN/SHOP/T-shirts_basic_b_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_3{
+        background-image: url(../images/MAIN/SHOP/T-shirts_nba_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_4{
+        background-image: url(../images/MAIN/SHOP/T-shirts_lotte_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_5{
+        background-image: url(../images/MAIN/SHOP/T-shirts_jupiter_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_6{
+        background-image: url(../images/MAIN/SHOP/T-shirts_pluto_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_7{
+        background-image: url(../images/MAIN/SHOP/T-shirts_saturn_back.jpg);
+        background-size: 443px 443px;
+      }
+      /*T-추가*/
+      .gallery_bg_29{
+        background-image: url(../images/MAIN/SHOP/T-shirts_8store_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_30{
+        background-image: url(../images/MAIN/SHOP/T-shirts_lotte2_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_33{
+        background-image: url(../images/MAIN/SHOP/T-shirts_dhl_back.jpg);
+        background-size: 443px 443px;
+      }
+      /*MTM*/
+      .gallery_bg_8{
+        background-image: url(../images/MAIN/SHOP/MTM_basic_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_9{
+        background-image: url(../images/MAIN/SHOP/MTM_basic_b_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_10{
+        background-image: url(../images/MAIN/SHOP/MTM_lightning_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_11{
+        background-image: url(../images/MAIN/SHOP/MTM_fire_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_12{
+        background-image: url(../images/MAIN/SHOP/MTM_address_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_25{
+        background-image: url(../images/MAIN/SHOP/MTM_cloud_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_13{
+        background-image: url(../images/MAIN/SHOP/MTM_earth_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_14{
+        background-image: url(../images/MAIN/SHOP/MTM_neptune_back.jpg);
+        background-size: 443px 443px;
+      }.gallery_bg_15{
+        background-image: url(../images/MAIN/SHOP/MTM_uranus_back.jpg);
+        background-size: 443px 443px;
+      }
+      /*MTM-추가*/
+      .gallery_bg_34{
+        background-image: url(../images/MAIN/SHOP/MTM_dhl_back.jpg);
+        background-size: 443px 443px;
+      }
+      /*HOODIE*/
+      .gallery_bg_16{
+        background-image: url(../images/MAIN/SHOP/Hooded_basic_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_17{
+        background-image: url(../images/MAIN/SHOP/Hooded_basic_b_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_18{
+        background-image: url(../images/MAIN/SHOP/Hooded_korea_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_19{
+        background-image: url(../images/MAIN/SHOP/Hooded_tree_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_20{
+        background-image: url(../images/MAIN/SHOP/Hooded_party_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_21{
+        background-image: url(../images/MAIN/SHOP/Hooded_lotte_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_27{
+        background-image: url(../images/MAIN/SHOP/Hooded_lotte2_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_22{
+        background-image: url(../images/MAIN/SHOP/Hooded_bk_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_23{
+        background-image: url(../images/MAIN/SHOP/Hooded_mars_back.jpg);
+        background-size: 443px 443px;
+      }
+      .gallery_bg_24{
+        background-image: url(../images/MAIN/SHOP/Hooded_blackhole_back.jpg);
+        background-size: 443px 443px;
+      }
+      
+      .gallery img:hover{opacity: 0;}
+      
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+      
+      
+      .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: 1;
+      }
+      
+      .slick-active {
+        opacity: 1;
+      }
+      
+      .slick-current {
+        opacity: 1;
+      }
+
+}
+/*shop_391~1099*/
+@media (min-width:391px) and (max-width:1099px){
+  .shop2{
+    height: 488px;
+    background-color: #FF4646;
+    color: #fff;
+    font-size: 11px;
+    width: 100%;
+    font-family: "pretendard";
+}
+.slick-track{
+    width: 100%;
+}
+.m_burton{
+    text-align: center;
+    padding-top: 50px;
+}
+.burton{
+    display: none;
+}
+.shop{
+    display: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  .swiper {
+    width: 100%;
+    height: 240px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 22px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide p{
+    color: #fff;
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+  }
+  /*T_SHIRTS*/
+  .swiper_bg{
+    background-image: url(../images/MAIN/SHOP/T-shirts_basic_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_2{
+    background-image: url(../images/MAIN/SHOP/T-shirts_basic_b_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_3{
+    background-image: url(../images/MAIN/SHOP/T-shirts_nba_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_4{
+    background-image: url(../images/MAIN/SHOP/T-shirts_lotte_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_5{
+    background-image: url(../images/MAIN/SHOP/T-shirts_jupiter_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_6{
+    background-image: url(../images/MAIN/SHOP/T-shirts_pluto_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_7{
+    background-image: url(../images/MAIN/SHOP/T-shirts_saturn_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  /*T-추가*/
+  .swiper_bg_31{
+    background-image: url(../images/MAIN/SHOP/T-shirts_8store_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_32{
+    background-image: url(../images/MAIN/SHOP/T-shirts_lotte2_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_33{
+    background-image: url(../images/MAIN/SHOP/T-shirts_dhl_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  /*MTM*/
+  .swiper_bg_8{
+    background-image: url(../images/MAIN/SHOP/MTM_basic_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_9{
+    background-image: url(../images/MAIN/SHOP/MTM_basic_b_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_10{
+    background-image: url(../images/MAIN/SHOP/MTM_lightning_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_11{
+    background-image: url(../images/MAIN/SHOP/MTM_fire_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_12{
+    background-image: url(../images/MAIN/SHOP/MTM_address_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_26{
+    background-image: url(../images/MAIN/SHOP/MTM_cloud_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_13{
+    background-image: url(../images/MAIN/SHOP/MTM_earth_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_14{
+    background-image: url(../images/MAIN/SHOP/MTM_neptune_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_15{
+    background-image: url(../images/MAIN/SHOP/MTM_uranus_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  /*MTM-추가*/
+  .swiper_bg_34{
+    background-image: url(../images/MAIN/SHOP/MTM_dhl_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  /*HOODIE*/
+  .swiper_bg_16{
+    background-image: url(../images/MAIN/SHOP/Hooded_basic_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_17{
+    background-image: url(../images/MAIN/SHOP/Hooded_basic_b_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_18{
+    background-image: url(../images/MAIN/SHOP/Hooded_korea_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_19{
+    background-image: url(../images/MAIN/SHOP/Hooded_tree_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_20{
+    background-image: url(../images/MAIN/SHOP/Hooded_party_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_21{
+    background-image: url(../images/MAIN/SHOP/Hooded_lotte_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_28{
+    background-image: url(../images/MAIN/SHOP/Hooded_lotte2_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_22{
+    background-image: url(../images/MAIN/SHOP/Hooded_bk_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_23{
+    background-image: url(../images/MAIN/SHOP/Hooded_mars_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper_bg_24{
+    background-image: url(../images/MAIN/SHOP/Hooded_blackhole_back.jpg);
+    background-size: 190px 190px;
+    background-repeat: no-repeat;
+  }
+  .swiper-slide img:hover{opacity: 0;}
+}
+/*shop_mobile_390*/
+@media (max-width:390px){
+    .shop2{
+        height: 488px;
+        background-color: #FF4646;
+        color: #fff;
+        font-size: 11px;
+        width: 100%;
+        font-family: "pretendard";
+    }
+    .slick-track{
+        width: 100%;
+    }
+    .m_burton{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .burton{
+        display: none;
+    }
+    .shop{
+        display: none;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .swiper {
+        width: 100%;
+        height: 240px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 22px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide p{
+        color: #fff;
+        font-size: 12px;
+        padding-top: 8px;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+      }
+      /*T_SHIRTS*/
+      .swiper_bg{
+        background-image: url(../images/MAIN/SHOP/T-shirts_basic_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_2{
+        background-image: url(../images/MAIN/SHOP/T-shirts_basic_b_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_3{
+        background-image: url(../images/MAIN/SHOP/T-shirts_nba_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_31{
+        background-image: url(../images/MAIN/SHOP/T-shirts_8store_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_32{
+        background-image: url(../images/MAIN/SHOP/T-shirts_lotte2_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_4{
+        background-image: url(../images/MAIN/SHOP/T-shirts_lotte_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_5{
+        background-image: url(../images/MAIN/SHOP/T-shirts_jupiter_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_6{
+        background-image: url(../images/MAIN/SHOP/T-shirts_pluto_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_7{
+        background-image: url(../images/MAIN/SHOP/T-shirts_saturn_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      /*T-추가*/
+      .swiper_bg_31{
+        background-image: url(../images/MAIN/SHOP/T-shirts_8store_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_32{
+        background-image: url(../images/MAIN/SHOP/T-shirts_lotte2_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_33{
+        background-image: url(../images/MAIN/SHOP/T-shirts_dhl_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      /*MTM*/
+      .swiper_bg_8{
+        background-image: url(../images/MAIN/SHOP/MTM_basic_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_9{
+        background-image: url(../images/MAIN/SHOP/MTM_basic_b_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_10{
+        background-image: url(../images/MAIN/SHOP/MTM_lightning_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_11{
+        background-image: url(../images/MAIN/SHOP/MTM_fire_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_12{
+        background-image: url(../images/MAIN/SHOP/MTM_address_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_26{
+        background-image: url(../images/MAIN/SHOP/MTM_cloud_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_13{
+        background-image: url(../images/MAIN/SHOP/MTM_earth_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_14{
+        background-image: url(../images/MAIN/SHOP/MTM_neptune_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_15{
+        background-image: url(../images/MAIN/SHOP/MTM_uranus_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      /*MTM-추가*/
+      .swiper_bg_34{
+        background-image: url(../images/MAIN/SHOP/MTM_dhl_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      /*HOODIE*/
+      .swiper_bg_16{
+        background-image: url(../images/MAIN/SHOP/Hooded_basic_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_17{
+        background-image: url(../images/MAIN/SHOP/Hooded_basic_b_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_18{
+        background-image: url(../images/MAIN/SHOP/Hooded_korea_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_19{
+        background-image: url(../images/MAIN/SHOP/Hooded_tree_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_20{
+        background-image: url(../images/MAIN/SHOP/Hooded_party_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_21{
+        background-image: url(../images/MAIN/SHOP/Hooded_lotte_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_28{
+        background-image: url(../images/MAIN/SHOP/Hooded_lotte2_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_22{
+        background-image: url(../images/MAIN/SHOP/Hooded_bk_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_23{
+        background-image: url(../images/MAIN/SHOP/Hooded_mars_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_24{
+        background-image: url(../images/MAIN/SHOP/Hooded_blackhole_back.jpg);
+        background-size: 190px 190px;
+        background-repeat: no-repeat;
+      }
+      .swiper_bg_24 p{
+        font-size: 10px;
+      }
+      .swiper_bg_4 p{
+        font-size: 10px;
+      }
+      .swiper_bg_32 p{
+        font-size: 10px;
+      }
+      .swiper_bg_28 p{
+        font-size: 10px;
+      }
+      .swiper_bg_21 p{
+        font-size: 10px;
+      }
+      .swiper-slide img:hover{opacity: 0;}
+}
+/*line up*/
+/*line_up_pc_1000*/
+@media (min-width:1000px){
+    .line_up{
+        display: flex;
+        justify-content: space-around;
+        font-family: "pretendard";
+    }
+    .poster{
+        float: left;
+        width: 47%;
+    }
+    .poster img{
+        width: 100%;
+    }
+    .rappers{
+        width: 49%;
+    }
+    .photo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .photo li{
+        width: 32%;
+    }
+    .photo li img{
+        width: 100%;
+    }
+    .photo li .name{
+        font-weight: 800;
+        font-size: 23px;
+        padding: 17px 0 11px 0;
+    }
+    .photo li .location{
+        font-weight: 550;
+        font-size: 17px;
+        padding-bottom: 120px;
+    }
+    .photo li p{
+        font-weight: 550;
+        font-size: 17px;
+        padding-bottom: 72px;
+    }
+    .soundcom2 img{
+        width: 100%;
+    }
+    .burton2{
+        padding-top: 70px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .m_poster{
+        display: none;
+    }
+    .m_photo{
+        display: none;
+    }
+    .m_burton2{
+        display: none;
+    }
+}
+/*line_up_391_999*/
+@media (min-width:391px) and (max-width:1099px){
+  .m_poster{
+    height: 485px;
+    width: 100%;
+    background: url(../images_mobile/MAIN/LINEUP/S_POSTER.jpg) no-repeat center center;
+}
+.m_photo{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.m_photo li{
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+.m_photo li a{
+  font-family: "pretendard";
+}
+.m_name{
+    font-weight: 900;
+    padding-top: 5px;
+}
+.m_photo li .m_location{
+    font-size: 7px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.m_burton2{
+    text-align: center;
+    padding: 50px 0 70px 0;
+}
+.poster{
+    display: none;
+}
+.rappers{
+    display: none;
+}
+.burton2{
+    display: none;
+}
+}
+/*line_up_390*/
+@media (max-width:390px){
+    .m_poster{
+        height: 485px;
+        width: 100%;
+        background: url(../images_mobile/MAIN/LINEUP/S_POSTER.jpg);
+    }
+    .m_photo{
+        padding-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .m_photo li{
+        width: 50%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .m_photo li a{
+      font-family: "pretendard";
+    }
+    .m_name{
+        font-weight: 900;
+        padding-top: 5px;
+    }
+    .m_photo li .m_location{
+        font-size: 11px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .m_burton2{
+        text-align: center;
+        padding: 50px 0 70px 0;
+    }
+    .poster{
+        display: none;
+    }
+    .rappers{
+        display: none;
+    }
+    .burton2{
+        display: none;
+    }
+}
+/*relive 808*/
+/*relive 808_pc_1000*/
+@media (min-width:1000px){
+    .relive808{
+        height: 790px;
+        margin-bottom: 120px;
+    }
+    .relive_photo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .relive_photo img{
+        width: 100%;
+    }
+    .m_relive808{
+        display: none;
+    }
+}
+/*line_up_391_999*/
+@media (min-width:391px) and (max-width:1099px){
+  .m_relive808{
+    background: url(../images_mobile/MAIN/RELIVE808/S_RELIVE_808.png) no-repeat center center;
+    height: 1130px;
+    margin-bottom: 90px;
+}
+.relive_photo{
+    display: none;
+}
+}
+/*relive 808_390*/
+@media (max-width:390px){
+    .m_relive808{
+        background: url(../images_mobile/MAIN/RELIVE808/S_RELIVE_808.png) no-repeat center center;
+        height: 1130px;
+        margin-bottom: 90px;
+    }
+    .relive_photo{
+        display: none;
+    }
+}
+/*footer*/
+/*footer_pc_1000*/
+@media (min-width:1000px){
+    .footer{
+        height: 550px;
+        color: #B9B9B9;
+        background-color: #333;
+        font-family: "pretendard";
+    }
+    .footer_img{
+        background: url(../images/MAIN/FOOTER/FOOTER.png) no-repeat center top;
+        width: 100%;
+        height: 375px;
+    }
+    .footer_text{
+        width: 100%;
+        height: 175px;
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .left p{
+        float: left;
+    }
+    .left_logo li{
+        float: left;
+        padding: 0 10px 10px 0;
+    }
+    .left_logo li img{
+        width: 100%;
+    }
+    .center{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .sns{
+        padding-top: 15px;
+    }
+    .right{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+    .right .big{
+        padding-bottom: 20px;
+    }
+    .right .small{
+        font-size: 12px;
+        text-align: right;
+    }
+    .m_footer_img{
+        display: none;
+    }
+    .m_center{
+        display: none;
+    }   
+
+}
+/*footer_391~1099*/
+@media (min-width:391px) and (max-width:1099px){
+  .footer{
+    height: 315px;
+    text-align: center;
+    background-color: #333333;
+    color: #B9B9B9;
+    font-size: 14px;
+    font-family: "pretendard";
+}
+.m_logo2{
+    padding: 18px 0 2px;
+}
+.m_footer_img{
+    background: url(/images/MAIN/FOOTER/FOOTER.png) no-repeat center bottom;
+    height: 100px;
+    width: 100%;
+}
+.m_sponsor{
+    padding-top: 8px;
+}
+.footer_img{
+    display: none;
+}
+.footer_text{
+    display: none;
+}
+}
+/*footer_390*/
+@media (max-width:390px){
+    .footer{
+        height: 350px;
+        text-align: center;
+        background-color: #333333;
+        color: #B9B9B9;
+        font-size: 12px;
+        font-family: "pretendard";
+    }
+    .m_logo2{
+        padding: 18px 0 2px;
+    }
+    .m_footer_img{
+        background: url(../images_mobile/MAIN/FOOTER/S_FOOTER.png) no-repeat center top;
+        height: 130px;
+    }
+    .m_sponsor{
+        padding-top: 8px;
+    }
+    .footer_img{
+        display: none;
+    }
+    .footer_text{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

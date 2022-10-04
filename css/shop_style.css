@@ -1,0 +1,292 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #000; text-decoration: none;}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+body{
+    font-family: "pretendard";
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+/*header*/
+.header {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    top: 22px;
+    left: 65px;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    left: 235px;
+}
+
+.menu li {
+    float: left;
+    padding-right: 45px;
+}
+
+.menu li a {
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+    color: #fff;
+}
+
+.menu li span {
+    color: #F4DF02;
+}
+
+.link {
+    position: absolute;
+    right: 45px;
+    top: 23.5px
+}
+
+.link li {
+    float: left;
+}
+
+.link li:nth-child(1) {
+    padding: 7px 50px;
+}
+/*shop_banner*/
+.shop_banner{
+    background: url(../images/SHOP/SHOP_BANNER.png) no-repeat center top;
+    height: 207px;
+    margin-bottom: 80px;
+}
+/*shop*/
+.shop{
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+.clothes{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 19px;
+    font-weight: 500;
+}
+.box{
+    position: relative;
+}
+.name{
+    padding-top: 20px;
+}
+.heart{
+    position: absolute;
+    right: 15px;
+    top: 22px;
+    background: url(../images/SHOP/HEART2.png) no-repeat;
+}
+.price{
+    padding-top: 8px;
+}
+.clothes li{
+    width: 600px;
+    height: 600px;
+    padding-top: 120px;
+}
+.clothes li img{
+    width: 100%;
+}
+.clothes img:hover{opacity: 0;}
+/*t_shirts*/
+.c_bg1{
+    background: url(../images/MAIN/SHOP/T-shirts_basic_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg2{
+    background: url(../images/MAIN/SHOP/T-shirts_basic_b_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg3{
+    background: url(../images/MAIN/SHOP/T-shirts_nba_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg4{
+    background: url(../images/MAIN/SHOP/T-shirts_lotte_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg5{
+    background: url(../images/MAIN/SHOP/T-shirts_jupiter_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg6{
+    background: url(../images/MAIN/SHOP/T-shirts_pluto_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg7{
+    background: url(../images/MAIN/SHOP/T-shirts_saturn_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+/*mtm*/
+.c_bg8{
+    background: url(../images/MAIN/SHOP/MTM_basic_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg9{
+    background: url(../images/MAIN/SHOP/MTM_basic_b_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg10{
+    background: url(../images/MAIN/SHOP/MTM_lightning_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg11{
+    background: url(../images/MAIN/SHOP/MTM_fire_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg12{
+    background: url(../images/MAIN/SHOP/MTM_address_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg25{
+    background: url(../images/MAIN/SHOP/MTM_cloud_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg13{
+    background: url(../images/MAIN/SHOP/MTM_earth_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg14{
+    background: url(../images/MAIN/SHOP/MTM_neptune_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg15{
+    background: url(../images/MAIN/SHOP/MTM_uranus_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+/*hoodie*/
+.c_bg16{
+    background: url(../images/MAIN/SHOP/Hooded_basic_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg17{
+    background: url(../images/MAIN/SHOP/Hooded_basic_b_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg18{
+    background: url(../images/MAIN/SHOP/Hooded_korea_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg19{
+    background: url(../images/MAIN/SHOP/Hooded_tree_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg20{
+    background: url(../images/MAIN/SHOP/Hooded_party_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg21{
+    background: url(../images/MAIN/SHOP/Hooded_lotte_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg22{
+    background: url(../images/MAIN/SHOP/Hooded_bk_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg23{
+    background: url(../images/MAIN/SHOP/Hooded_mars_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg24{
+    background: url(../images/MAIN/SHOP/Hooded_blackhole_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+/*추가*/
+.c_bg25{
+    background: url(../images/MAIN/SHOP/T-shirts_8store_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg26{
+    background: url(../images/MAIN/SHOP/MTM_cloud_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg27{
+    background: url(../images/MAIN/SHOP/Hooded_lotte2_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg28{
+    background: url(../images/MAIN/SHOP/T-shirts_lotte2_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg29{
+    background: url(../images/MAIN/SHOP/T-shirts_dhl_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+.c_bg30{
+    background: url(../images/MAIN/SHOP/MTM_dhl_back.jpg) no-repeat center bottom;
+    background-size: 600px 600px;
+}
+/*footer*/
+.footer{
+    height: 550px;
+    color: #B9B9B9;
+    background-color: #333;
+    font-family: "pretendard";
+    margin-top: 100px;
+}
+.footer_img{
+    background: url(../images/MAIN/FOOTER/FOOTER.png) no-repeat center top;
+    width: 100%;
+    height: 375px;
+    
+}
+.footer_text{
+    width: 100%;
+    height: 175px;
+    position: relative;
+}
+.left{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.left p{
+    float: left;
+}
+.left_logo li{
+    float: left;
+    padding: 0 10px 10px 0;
+}
+.left_logo li img{
+    width: 100%;
+}
+.center{
+    text-align: center;
+    padding-top: 30px;
+}
+.sns{
+    padding-top: 15px;
+}
+.right2{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.right2 .big{
+    padding-bottom: 20px;
+}
+.right2 .small{
+    font-size: 12px;
+    text-align: right;
+}
